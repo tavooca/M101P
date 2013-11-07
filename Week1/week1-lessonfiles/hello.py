@@ -1,4 +1,3 @@
-
 import bottle
 import pymongo
 
@@ -20,7 +19,7 @@ def index():
     # find a single document
     item = name.find_one()
 
-    return '<b>Hello %s!</b>' % item['name']
+    return '<b>Hola %s!</b>' % item['name']
 
 
 bottle.run(host='localhost', port=8082)
